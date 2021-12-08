@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B4740011276136A800B3C0CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740010276136A800B3C0CB /* AppDelegate.swift */; };
 		B4740013276136A800B3C0CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740012276136A800B3C0CB /* SceneDelegate.swift */; };
-		B4740015276136A800B3C0CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740014276136A800B3C0CB /* ViewController.swift */; };
+		B4740015276136A800B3C0CB /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740014276136A800B3C0CB /* ClubsViewController.swift */; };
 		B4740018276136A900B3C0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4740016276136A900B3C0CB /* Main.storyboard */; };
 		B474001A276136B600B3C0CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4740019276136B600B3C0CB /* Assets.xcassets */; };
 		B474001D276136B600B3C0CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B474001B276136B600B3C0CB /* LaunchScreen.storyboard */; };
@@ -19,6 +19,7 @@
 		B474004127613B4500B3C0CB /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474004027613B4500B3C0CB /* LeaguesViewController.swift */; };
 		B474004327613CFE00B3C0CB /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474004227613CFE00B3C0CB /* LeagueCell.swift */; };
 		B47400452761499600B3C0CB /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47400442761499500B3C0CB /* League.swift */; };
+		B47400492761528E00B3C0CB /* ClubsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47400482761528E00B3C0CB /* ClubsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 		B474000D276136A800B3C0CB /* SoccerTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4740010276136A800B3C0CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4740012276136A800B3C0CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4740014276136A800B3C0CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4740014276136A800B3C0CB /* ClubsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
 		B4740017276136A900B3C0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4740019276136B600B3C0CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B474001C276136B600B3C0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		B474004027613B4500B3C0CB /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
 		B474004227613CFE00B3C0CB /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
 		B47400442761499500B3C0CB /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		B47400482761528E00B3C0CB /* ClubsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,8 @@
 			children = (
 				B4740010276136A800B3C0CB /* AppDelegate.swift */,
 				B4740012276136A800B3C0CB /* SceneDelegate.swift */,
-				B4740014276136A800B3C0CB /* ViewController.swift */,
+				B4740014276136A800B3C0CB /* ClubsViewController.swift */,
+				B47400482761528E00B3C0CB /* ClubsCell.swift */,
 				B4740016276136A900B3C0CB /* Main.storyboard */,
 				B4740019276136B600B3C0CB /* Assets.xcassets */,
 				B474001B276136B600B3C0CB /* LaunchScreen.storyboard */,
@@ -275,8 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47400492761528E00B3C0CB /* ClubsCell.swift in Sources */,
 				B474004327613CFE00B3C0CB /* LeagueCell.swift in Sources */,
-				B4740015276136A800B3C0CB /* ViewController.swift in Sources */,
+				B4740015276136A800B3C0CB /* ClubsViewController.swift in Sources */,
 				B474004127613B4500B3C0CB /* LeaguesViewController.swift in Sources */,
 				B4740011276136A800B3C0CB /* AppDelegate.swift in Sources */,
 				B47400452761499600B3C0CB /* League.swift in Sources */,
