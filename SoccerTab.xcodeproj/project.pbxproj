@@ -18,6 +18,7 @@
 		B4740034276136BB00B3C0CB /* SoccerTabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740033276136BB00B3C0CB /* SoccerTabUITestsLaunchTests.swift */; };
 		B474004127613B4500B3C0CB /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474004027613B4500B3C0CB /* LeaguesViewController.swift */; };
 		B474004327613CFE00B3C0CB /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474004227613CFE00B3C0CB /* LeagueCell.swift */; };
+		B47400452761499600B3C0CB /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47400442761499500B3C0CB /* League.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B4740033276136BB00B3C0CB /* SoccerTabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerTabUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B474004027613B4500B3C0CB /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
 		B474004227613CFE00B3C0CB /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
+		B47400442761499500B3C0CB /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				B474001E276136B600B3C0CB /* Info.plist */,
 				B474004027613B4500B3C0CB /* LeaguesViewController.swift */,
 				B474004227613CFE00B3C0CB /* LeagueCell.swift */,
+				B474004727614F5D00B3C0CB /* Model */,
 			);
 			path = SoccerTab;
 			sourceTree = "<group>";
@@ -131,6 +134,14 @@
 				B4740033276136BB00B3C0CB /* SoccerTabUITestsLaunchTests.swift */,
 			);
 			path = SoccerTabUITests;
+			sourceTree = "<group>";
+		};
+		B474004727614F5D00B3C0CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B47400442761499500B3C0CB /* League.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 				B4740015276136A800B3C0CB /* ViewController.swift in Sources */,
 				B474004127613B4500B3C0CB /* LeaguesViewController.swift in Sources */,
 				B4740011276136A800B3C0CB /* AppDelegate.swift in Sources */,
+				B47400452761499600B3C0CB /* League.swift in Sources */,
 				B4740013276136A800B3C0CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

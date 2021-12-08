@@ -2,20 +2,20 @@
 //  LeagueOfCountryCell.swift
 //  SoccerTab
 //
-//  Created by IBE on 08/12/2021.
+//  Created by naseem on 08/12/2021.
 //
 
 import UIKit
 
 class LeagueCell : UICollectionViewCell {
-    @IBOutlet weak var leagueName : UILabel!
-    @IBOutlet weak var countryName : UILabel!
-    @IBOutlet weak var date : UILabel!
+    @IBOutlet weak var leagueNameLabel : UILabel!
+    @IBOutlet weak var countryNameLabel : UILabel!
+    @IBOutlet weak var dateLabel : UILabel!    
     
-    
-    
-    func configure (){
-        
+    func configure (with model: League){
+        leagueNameLabel.text = model.leagueName
+        countryNameLabel.text = model.countryName
+        dateLabel.text = model.date
     }
     
 }
