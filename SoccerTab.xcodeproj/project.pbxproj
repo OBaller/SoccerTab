@@ -16,6 +16,8 @@
 		B4740028276136BB00B3C0CB /* SoccerTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740027276136BB00B3C0CB /* SoccerTabTests.swift */; };
 		B4740032276136BB00B3C0CB /* SoccerTabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740031276136BB00B3C0CB /* SoccerTabUITests.swift */; };
 		B4740034276136BB00B3C0CB /* SoccerTabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740033276136BB00B3C0CB /* SoccerTabUITestsLaunchTests.swift */; };
+		B474004127613B4500B3C0CB /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474004027613B4500B3C0CB /* LeaguesViewController.swift */; };
+		B474004327613CFE00B3C0CB /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474004227613CFE00B3C0CB /* LeagueCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B474002D276136BB00B3C0CB /* SoccerTabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerTabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4740031276136BB00B3C0CB /* SoccerTabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerTabUITests.swift; sourceTree = "<group>"; };
 		B4740033276136BB00B3C0CB /* SoccerTabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerTabUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B474004027613B4500B3C0CB /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
+		B474004227613CFE00B3C0CB /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				B4740019276136B600B3C0CB /* Assets.xcassets */,
 				B474001B276136B600B3C0CB /* LaunchScreen.storyboard */,
 				B474001E276136B600B3C0CB /* Info.plist */,
+				B474004027613B4500B3C0CB /* LeaguesViewController.swift */,
+				B474004227613CFE00B3C0CB /* LeagueCell.swift */,
 			);
 			path = SoccerTab;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B474004327613CFE00B3C0CB /* LeagueCell.swift in Sources */,
 				B4740015276136A800B3C0CB /* ViewController.swift in Sources */,
+				B474004127613B4500B3C0CB /* LeaguesViewController.swift in Sources */,
 				B4740011276136A800B3C0CB /* AppDelegate.swift in Sources */,
 				B4740013276136A800B3C0CB /* SceneDelegate.swift in Sources */,
 			);
