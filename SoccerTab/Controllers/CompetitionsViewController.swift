@@ -7,38 +7,37 @@
 
 import UIKit
 
-class LeaguesViewController : UIViewController {
-    private var competition = [Competition]()
+class CompetitionsViewController : UIViewController {
+    private var diffLeagues = CompetitionsViewModel()
     @IBOutlet weak var leagueOfCountryCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         leagueOfCountryCollectionView.delegate = self
         leagueOfCountryCollectionView.dataSource = self
-        fetchCompetition()
-    }
-    func fetchCompetition() {
-        CompetitionService.shared.fetchLeagues { (results, error) in
-            if let error = error {
-              print("Failed to fetch football data", error)
-                return
-            }
-            self.competition = results
+        diffLeagues.fetchDifferentLeague()
+        diffLeagues.closure = {[weak self] in
             DispatchQueue.main.async {
-                self.leagueOfCountryCollectionView.reloadData()
+                self?.leagueOfCountryCollectionView.reloadData()
             }
         }
     }
+    
 }
 
-extension LeaguesViewController : UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension CompetitionsViewController : UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return competition.count
+        return diffLeagues.competition.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("League ID:: \(diffLeagues.competition[indexPath.item].id)")
+        // Instantiate Crest ViewControllers
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = leagueOfCountryCollectionView.dequeueReusableCell(withReuseIdentifier: "LeagueCell", for: indexPath) as! LeagueCell
-        cell.configure(with: competition[indexPath.item])
+        cell.configure(with: diffLeagues.competition[indexPath.item])
         return cell
     }
     

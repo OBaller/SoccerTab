@@ -10,14 +10,9 @@ import Foundation
 // MARK: - CompetitionsModel
 struct CompetitionsModel: Codable {
     let count: Int
-    let filters: Filters
     let competitions: [Competition]
 }
-// MARK: - Filters
-struct Filters: Codable {
-    let dateFrom, dateTo, permission: String?
-}
-//
+
 //// MARK: - Competition
 struct Competition: Codable {
     let id: Int
