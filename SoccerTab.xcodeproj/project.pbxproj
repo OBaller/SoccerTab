@@ -28,6 +28,7 @@
 		B474005A276228E100B3C0CB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B4740059276228E100B3C0CB /* Realm */; };
 		B474005C276228E200B3C0CB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B474005B276228E200B3C0CB /* RealmSwift */; };
 		B49D8238276233AB00BE3800 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D8237276233AB00BE3800 /* NetworkService.swift */; };
+		B49D823A2762483500BE3800 /* CompetitionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D82392762483500BE3800 /* CompetitionsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B474004A2761639600B3C0CB /* TeamInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoViewController.swift; sourceTree = "<group>"; };
 		B474004C2761757500B3C0CB /* PlayerInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoCell.swift; sourceTree = "<group>"; };
 		B49D8237276233AB00BE3800 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B49D82392762483500BE3800 /* CompetitionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				B47400442761499500B3C0CB /* League.swift */,
+				B49D82392762483500BE3800 /* CompetitionsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				B474004327613CFE00B3C0CB /* LeagueCell.swift in Sources */,
 				B4740015276136A800B3C0CB /* ClubsViewController.swift in Sources */,
 				B474004127613B4500B3C0CB /* LeaguesViewController.swift in Sources */,
+				B49D823A2762483500BE3800 /* CompetitionsModel.swift in Sources */,
 				B4740011276136A800B3C0CB /* AppDelegate.swift in Sources */,
 				B47400452761499600B3C0CB /* League.swift in Sources */,
 				B4740013276136A800B3C0CB /* SceneDelegate.swift in Sources */,
