@@ -20,6 +20,8 @@
 		B474004327613CFE00B3C0CB /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474004227613CFE00B3C0CB /* LeagueCell.swift */; };
 		B47400452761499600B3C0CB /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47400442761499500B3C0CB /* League.swift */; };
 		B47400492761528E00B3C0CB /* ClubsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47400482761528E00B3C0CB /* ClubsCell.swift */; };
+		B474004B2761639700B3C0CB /* TeamInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474004A2761639600B3C0CB /* TeamInfoViewController.swift */; };
+		B474004D2761757600B3C0CB /* PlayerInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474004C2761757500B3C0CB /* PlayerInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		B474004227613CFE00B3C0CB /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
 		B47400442761499500B3C0CB /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		B47400482761528E00B3C0CB /* ClubsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsCell.swift; sourceTree = "<group>"; };
+		B474004A2761639600B3C0CB /* TeamInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoViewController.swift; sourceTree = "<group>"; };
+		B474004C2761757500B3C0CB /* PlayerInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,14 +113,16 @@
 			children = (
 				B4740010276136A800B3C0CB /* AppDelegate.swift */,
 				B4740012276136A800B3C0CB /* SceneDelegate.swift */,
+				B474004A2761639600B3C0CB /* TeamInfoViewController.swift */,
+				B474004C2761757500B3C0CB /* PlayerInfoCell.swift */,
 				B4740014276136A800B3C0CB /* ClubsViewController.swift */,
 				B47400482761528E00B3C0CB /* ClubsCell.swift */,
+				B474004027613B4500B3C0CB /* LeaguesViewController.swift */,
+				B474004227613CFE00B3C0CB /* LeagueCell.swift */,
 				B4740016276136A900B3C0CB /* Main.storyboard */,
 				B4740019276136B600B3C0CB /* Assets.xcassets */,
 				B474001B276136B600B3C0CB /* LaunchScreen.storyboard */,
 				B474001E276136B600B3C0CB /* Info.plist */,
-				B474004027613B4500B3C0CB /* LeaguesViewController.swift */,
-				B474004227613CFE00B3C0CB /* LeagueCell.swift */,
 				B474004727614F5D00B3C0CB /* Model */,
 			);
 			path = SoccerTab;
@@ -279,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B47400492761528E00B3C0CB /* ClubsCell.swift in Sources */,
+				B474004B2761639700B3C0CB /* TeamInfoViewController.swift in Sources */,
+				B474004D2761757600B3C0CB /* PlayerInfoCell.swift in Sources */,
 				B474004327613CFE00B3C0CB /* LeagueCell.swift in Sources */,
 				B4740015276136A800B3C0CB /* ClubsViewController.swift in Sources */,
 				B474004127613B4500B3C0CB /* LeaguesViewController.swift in Sources */,
