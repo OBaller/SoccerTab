@@ -15,8 +15,8 @@ class ClubsViewController: UIViewController {
         clubsCollectionView.delegate = self
         clubsCollectionView.dataSource = self
     }
-
-
+    
+    
 }
 
 extension ClubsViewController:  UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

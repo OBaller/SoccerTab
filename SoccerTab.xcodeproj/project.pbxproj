@@ -32,6 +32,7 @@
 		B49D8241276299AF00BE3800 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D8240276299AF00BE3800 /* TeamViewModel.swift */; };
 		B49D8243276299CA00BE3800 /* ClubsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D8242276299C900BE3800 /* ClubsViewModel.swift */; };
 		B49D8245276299E000BE3800 /* CompetitionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D8244276299E000BE3800 /* CompetitionsViewModel.swift */; };
+		B49D82472762A94A00BE3800 /* TeamRankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D82462762A94A00BE3800 /* TeamRankModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		B49D8240276299AF00BE3800 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		B49D8242276299C900BE3800 /* ClubsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsViewModel.swift; sourceTree = "<group>"; };
 		B49D8244276299E000BE3800 /* CompetitionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsViewModel.swift; sourceTree = "<group>"; };
+		B49D82462762A94A00BE3800 /* TeamRankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRankModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				B49D82392762483500BE3800 /* CompetitionsModel.swift */,
+				B49D82462762A94A00BE3800 /* TeamRankModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			files = (
 				B49D8243276299CA00BE3800 /* ClubsViewModel.swift in Sources */,
 				B49D823C276292B100BE3800 /* PlayerInfoCell.swift in Sources */,
+				B49D82472762A94A00BE3800 /* TeamRankModel.swift in Sources */,
 				B49D8238276233AB00BE3800 /* NetworkService.swift in Sources */,
 				B47400492761528E00B3C0CB /* ClubsCell.swift in Sources */,
 				B474004B2761639700B3C0CB /* TeamInfoViewController.swift in Sources */,

@@ -31,8 +31,12 @@ extension CompetitionsViewController : UICollectionViewDelegate,UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("League ID:: \(diffLeagues.competition[indexPath.item].id)")
-        // Instantiate Crest ViewControllers
+//        print("League ID:: \(diffLeagues.competition[indexPath.item].id)")
+        if let clubsViewController = storyboard?.instantiateViewController(withIdentifier: "ClubsViewController") as? ClubsViewController {
+            clubsViewController.clubID = diffLeagues.competition[indexPath.item].id
+            navigationController?.pushViewController(clubsViewController, animated: true)
+        }
+             
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -13,9 +13,9 @@ class Service {
 //    func fetchMatches (head: Token, token: String?, header: String?, urlString: String, completion: @escaping (Match?, Error?)->Void) {
 //        fetchGenericJSON(head:head, token:token, header: header, urlString: urlString, completion:  completion)
 //    }
-//    func fetchTeamRank(head: Token, token: String?, header: String?, urlString: String, completion: @escaping (TeamRankModel?, Error?)->Void) {
-//        fetchGenericJSON(head:head, token:token, header: header, urlString: urlString, completion:  completion)
-//    }
+    func fetchTeamRank(head: Token, token: String?, header: String?, urlString: String, completion: @escaping (TeamRankModel?, Error?)->Void) {
+        fetchGenericJSON(head:head, token:token, header: header, urlString: urlString, completion:  completion)
+    }
     func fetchLeagueCompetitions (head: Token, token: String?, header: String?, urlString: String,completion: @escaping (CompetitionsModel?, Error?)->Void) {
         fetchGenericJSON(head: head, token: token, header: token, urlString: urlString, completion: completion)
     }
