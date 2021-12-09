@@ -8,25 +8,37 @@
 import UIKit
 
 class LeaguesViewController : UIViewController {
-    private var data: [League] = []
+    private var competition = [Competition]()
     @IBOutlet weak var leagueOfCountryCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        data = leagues
         leagueOfCountryCollectionView.delegate = self
         leagueOfCountryCollectionView.dataSource = self
+        fetchCompetition()
+    }
+    func fetchCompetition() {
+        CompetitionService.shared.fetchLeagues { (results, error) in
+            if let error = error {
+              print("Failed to fetch football data", error)
+                return
+            }
+            self.competition = results
+            DispatchQueue.main.async {
+                self.leagueOfCountryCollectionView.reloadData()
+            }
+        }
     }
 }
 
 extension LeaguesViewController : UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.count
+        return competition.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = leagueOfCountryCollectionView.dequeueReusableCell(withReuseIdentifier: "LeagueCell", for: indexPath) as! LeagueCell
-        cell.configure(with: data[indexPath.item])
+        cell.configure(with: competition[indexPath.item])
         return cell
     }
     

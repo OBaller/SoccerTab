@@ -12,10 +12,10 @@ class LeagueCell : UICollectionViewCell {
     @IBOutlet weak var countryNameLabel : UILabel!
     @IBOutlet weak var dateLabel : UILabel!    
     
-    func configure (with model: League){
-        leagueNameLabel.text = model.leagueName
-        countryNameLabel.text = model.countryName
-        dateLabel.text = model.date
+    func configure (with model: Competition){
+        leagueNameLabel.text = model.name
+        countryNameLabel.text = model.area.name
+        dateLabel.text = model.currentSeason?.startDate
     }
     
 }

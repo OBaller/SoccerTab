@@ -10,26 +10,33 @@ import Foundation
 // MARK: - CompetitionsModel
 struct CompetitionsModel: Codable {
     let count: Int
-    let filters: String
+    let filters: Filters
     let competitions: [Competition]
 }
-
-// MARK: - Competition
+// MARK: - Filters
+struct Filters: Codable {
+    let dateFrom, dateTo, permission: String?
+}
+//
+//// MARK: - Competition
 struct Competition: Codable {
     let id: Int
     let area: Area
     let name: String
     let code: String?
     let emblemURL: String?
-    let plan: Plan
+    let plan: Plan?
     let currentSeason: CurrentSeason?
-    let numberOfAvailableSeasons: Int
-    let lastUpdated: Date
-    
+    let numberOfAvailableSeasons: Int?
+    let lastUpdated: String?
+
     enum CodingKeys: String, CodingKey {
-        case id, area, name, code
+        case id, area, name
+        case code
         case emblemURL = "emblemUrl"
-        case plan, currentSeason, numberOfAvailableSeasons, lastUpdated
+        case plan
+             case currentSeason, numberOfAvailableSeasons
+        case lastUpdated
     }
 }
 
@@ -38,14 +45,14 @@ struct Area: Codable {
     let id: Int
     let name, countryCode: String
     let ensignURL: String?
-    
+
     enum CodingKeys: String, CodingKey {
         case id, name, countryCode
         case ensignURL = "ensignUrl"
     }
 }
 
-// MARK: - CurrentSeason
+//// MARK: - CurrentSeason
 struct CurrentSeason: Codable {
     let id: Int
     let startDate, endDate: String
@@ -59,7 +66,7 @@ struct Winner: Codable {
     let name: String
     let shortName, tla: String?
     let crestURL: String?
-    
+
     enum CodingKeys: String, CodingKey {
         case id, name, shortName, tla
         case crestURL = "crestUrl"
