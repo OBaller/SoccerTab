@@ -43,5 +43,14 @@ extension ClubsViewController:  UICollectionViewDelegate,UICollectionViewDataSou
         return .init(top: 10, left: 10, bottom: 10, right: 10)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let passData = clubVM.teams[indexPath.item]
+        if let controller = storyboard?.instantiateViewController(withIdentifier: "TeamInfoViewController") as? TeamInfoViewController {
+            controller.teamInfoVM.teamId = passData.team.id
+            controller.title = passData.team.name
+            controller.teamInfoVM.teamLogo = passData.team
+            navigationController?.pushViewController(controller, animated: true)
+        }
+       
+    }
 }
-

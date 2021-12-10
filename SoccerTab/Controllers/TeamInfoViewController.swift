@@ -8,8 +8,8 @@
 import UIKit
 
 class TeamInfoViewController: UIViewController {
-    private var teamInfo = [Competition]()
-
+    var teamInfoVM = TeamPlayerViewModel()
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var playerInfoCollectionView: UICollectionView!
     @IBOutlet weak var foundedLabel: UILabel!
     @IBOutlet weak var nickNameLabel: UILabel!
@@ -20,20 +20,29 @@ class TeamInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.bounds = view.bounds
+        scrollView.isUserInteractionEnabled = true
+        scrollView.isScrollEnabled = true
+        teamInfoVM.fetchTeamPlayers()
         playerInfoCollectionView.delegate = self
         playerInfoCollectionView.dataSource = self
+        teamInfoVM.closure = {[weak self] in
+            DispatchQueue.main.async {
+                self?.playerInfoCollectionView.reloadData()
+            }
+        }
     }
-
 }
 
 extension TeamInfoViewController : UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return teamInfo.count
+        return teamInfoVM.teamPlayers.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = playerInfoCollectionView.dequeueReusableCell(withReuseIdentifier: "PlayerInfoCell", for: indexPath) as! PlayerInfoCell
-//        cell.configure(with: competition[indexPath.item])
+        cell.configure(with: teamInfoVM.teamPlayers[indexPath.item])
+//        cell.configure(with: clubVM.teams[indexPath.item].team.crestUrl)
         return cell
     }
     

@@ -14,7 +14,8 @@ class PlayerInfoCell: UICollectionViewCell {
     @IBOutlet weak var playerCountry: UILabel!
     @IBOutlet weak var playerDOB: UILabel!
     
-    func configure() {
-        
+    func configure(with model: Squad) {
+        playerName.text = model.name
+        playerPosition.text = model.position
     }
 }

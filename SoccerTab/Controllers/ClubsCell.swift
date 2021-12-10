@@ -15,7 +15,3 @@ class ClubsCell: UICollectionViewCell {
         clubsImage.sd_setImage(with: URL(string: model))
     }
 }
-
-
-
-

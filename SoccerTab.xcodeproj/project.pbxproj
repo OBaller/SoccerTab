@@ -23,9 +23,6 @@
 		B474005227621FFF00B3C0CB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B474005127621FFF00B3C0CB /* SDWebImage */; };
 		B474005427621FFF00B3C0CB /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B474005327621FFF00B3C0CB /* SDWebImageMapKit */; };
 		B4740057276226B700B3C0CB /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = B4740056276226B700B3C0CB /* SDWebImageSVGCoder */; };
-		B474005A276228E100B3C0CB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B4740059276228E100B3C0CB /* Realm */; };
-		B474005C276228E200B3C0CB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B474005B276228E200B3C0CB /* RealmSwift */; };
-		B49D8238276233AB00BE3800 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D8237276233AB00BE3800 /* NetworkService.swift */; };
 		B49D823A2762483500BE3800 /* CompetitionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D82392762483500BE3800 /* CompetitionsModel.swift */; };
 		B49D823C276292B100BE3800 /* PlayerInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D823B276292B100BE3800 /* PlayerInfoCell.swift */; };
 		B49D823E2762970600BE3800 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D823D2762970600BE3800 /* Service.swift */; };
@@ -33,6 +30,7 @@
 		B49D8243276299CA00BE3800 /* ClubsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D8242276299C900BE3800 /* ClubsViewModel.swift */; };
 		B49D8245276299E000BE3800 /* CompetitionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D8244276299E000BE3800 /* CompetitionsViewModel.swift */; };
 		B49D82472762A94A00BE3800 /* TeamRankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D82462762A94A00BE3800 /* TeamRankModel.swift */; };
+		B49D824927639D9600BE3800 /* TeamPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D824827639D9500BE3800 /* TeamPlayers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +68,6 @@
 		B474004227613CFE00B3C0CB /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
 		B47400482761528E00B3C0CB /* ClubsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsCell.swift; sourceTree = "<group>"; };
 		B474004A2761639600B3C0CB /* TeamInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoViewController.swift; sourceTree = "<group>"; };
-		B49D8237276233AB00BE3800 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B49D82392762483500BE3800 /* CompetitionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsModel.swift; sourceTree = "<group>"; };
 		B49D823B276292B100BE3800 /* PlayerInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoCell.swift; sourceTree = "<group>"; };
 		B49D823D2762970600BE3800 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -78,6 +75,7 @@
 		B49D8242276299C900BE3800 /* ClubsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsViewModel.swift; sourceTree = "<group>"; };
 		B49D8244276299E000BE3800 /* CompetitionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsViewModel.swift; sourceTree = "<group>"; };
 		B49D82462762A94A00BE3800 /* TeamRankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRankModel.swift; sourceTree = "<group>"; };
+		B49D824827639D9500BE3800 /* TeamPlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPlayers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +85,6 @@
 			files = (
 				B4740057276226B700B3C0CB /* SDWebImageSVGCoder in Frameworks */,
 				B474005427621FFF00B3C0CB /* SDWebImageMapKit in Frameworks */,
-				B474005A276228E100B3C0CB /* Realm in Frameworks */,
-				B474005C276228E200B3C0CB /* RealmSwift in Frameworks */,
 				B474005227621FFF00B3C0CB /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +165,7 @@
 			children = (
 				B49D82392762483500BE3800 /* CompetitionsModel.swift */,
 				B49D82462762A94A00BE3800 /* TeamRankModel.swift */,
+				B49D824827639D9500BE3800 /* TeamPlayers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,7 +186,6 @@
 		B49D82362762338A00BE3800 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				B49D8237276233AB00BE3800 /* NetworkService.swift */,
 				B49D823D2762970600BE3800 /* Service.swift */,
 			);
 			path = NetworkManager;
@@ -225,8 +221,6 @@
 				B474005127621FFF00B3C0CB /* SDWebImage */,
 				B474005327621FFF00B3C0CB /* SDWebImageMapKit */,
 				B4740056276226B700B3C0CB /* SDWebImageSVGCoder */,
-				B4740059276228E100B3C0CB /* Realm */,
-				B474005B276228E200B3C0CB /* RealmSwift */,
 			);
 			productName = SoccerTab;
 			productReference = B474000D276136A800B3C0CB /* SoccerTab.app */;
@@ -303,7 +297,6 @@
 			packageReferences = (
 				B474005027621FFF00B3C0CB /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				B4740055276226B600B3C0CB /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
-				B4740058276228E000B3C0CB /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = B474000E276136A800B3C0CB /* Products */;
 			projectDirPath = "";
@@ -349,9 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B49D8243276299CA00BE3800 /* ClubsViewModel.swift in Sources */,
+				B49D824927639D9600BE3800 /* TeamPlayers.swift in Sources */,
 				B49D823C276292B100BE3800 /* PlayerInfoCell.swift in Sources */,
 				B49D82472762A94A00BE3800 /* TeamRankModel.swift in Sources */,
-				B49D8238276233AB00BE3800 /* NetworkService.swift in Sources */,
 				B47400492761528E00B3C0CB /* ClubsCell.swift in Sources */,
 				B474004B2761639700B3C0CB /* TeamInfoViewController.swift in Sources */,
 				B49D8245276299E000BE3800 /* CompetitionsViewModel.swift in Sources */,
@@ -744,14 +737,6 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		B4740058276228E000B3C0CB /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-cocoa.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -769,16 +754,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B4740055276226B600B3C0CB /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
 			productName = SDWebImageSVGCoder;
-		};
-		B4740059276228E100B3C0CB /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4740058276228E000B3C0CB /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = Realm;
-		};
-		B474005B276228E200B3C0CB /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4740058276228E000B3C0CB /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
