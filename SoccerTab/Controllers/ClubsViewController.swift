@@ -9,24 +9,28 @@ import UIKit
 
 class ClubsViewController: UIViewController {
     @IBOutlet weak var clubsCollectionView: UICollectionView!
-    
+     var clubVM = ClubsViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        clubVM.fetchTeamRanks()
         clubsCollectionView.delegate = self
         clubsCollectionView.dataSource = self
+        clubVM.closure = {[weak self] in
+            DispatchQueue.main.async {
+                self?.clubsCollectionView.reloadData()
+            }
+        }
     }
-    
-    
 }
 
 extension ClubsViewController:  UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return clubVM.teams.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = clubsCollectionView.dequeueReusableCell(withReuseIdentifier: "ClubsCell", for: indexPath) as! ClubsCell
-        cell.configure()
+        cell.configure(with: clubVM.teams[indexPath.item].team.crestUrl)
         return cell
     }
     

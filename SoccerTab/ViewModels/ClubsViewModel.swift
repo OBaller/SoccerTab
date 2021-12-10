@@ -12,7 +12,7 @@ class ClubsViewModel {
     private let service = Service()
     var teams = [TeamPosition]()
     var closure: (()->())?
-    private  let token = "8d348944cece4d89bd53923896167f29"
+    private  let token = "cc8dd01fcd8648d680bd416224f0106b"
     private let header = "X-Auth-Token"
     func fetchTeamRanks () {
         let urlString = "https://api.football-data.org/v2/competitions/\(clubID ?? 2021)/standings"

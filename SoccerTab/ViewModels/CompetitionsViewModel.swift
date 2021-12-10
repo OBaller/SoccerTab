@@ -1,5 +1,5 @@
 //
-//  PlayerInfoViewModel.swift
+//  CompetitionsViewModel.swift
 //  SoccerTab
 //
 //  Created by naseem on 09/12/2021.
