@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B46CA2512764CB9800842CC0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B46CA2502764CB9800842CC0 /* Realm */; };
+		B46CA2532764CB9800842CC0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B46CA2522764CB9800842CC0 /* RealmSwift */; };
 		B4740011276136A800B3C0CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740010276136A800B3C0CB /* AppDelegate.swift */; };
 		B4740013276136A800B3C0CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740012276136A800B3C0CB /* SceneDelegate.swift */; };
 		B4740015276136A800B3C0CB /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740014276136A800B3C0CB /* ClubsViewController.swift */; };
@@ -85,6 +87,8 @@
 			files = (
 				B4740057276226B700B3C0CB /* SDWebImageSVGCoder in Frameworks */,
 				B474005427621FFF00B3C0CB /* SDWebImageMapKit in Frameworks */,
+				B46CA2512764CB9800842CC0 /* Realm in Frameworks */,
+				B46CA2532764CB9800842CC0 /* RealmSwift in Frameworks */,
 				B474005227621FFF00B3C0CB /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +225,8 @@
 				B474005127621FFF00B3C0CB /* SDWebImage */,
 				B474005327621FFF00B3C0CB /* SDWebImageMapKit */,
 				B4740056276226B700B3C0CB /* SDWebImageSVGCoder */,
+				B46CA2502764CB9800842CC0 /* Realm */,
+				B46CA2522764CB9800842CC0 /* RealmSwift */,
 			);
 			productName = SoccerTab;
 			productReference = B474000D276136A800B3C0CB /* SoccerTab.app */;
@@ -297,6 +303,7 @@
 			packageReferences = (
 				B474005027621FFF00B3C0CB /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				B4740055276226B600B3C0CB /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
+				B46CA24F2764CB9700842CC0 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = B474000E276136A800B3C0CB /* Products */;
 			projectDirPath = "";
@@ -721,6 +728,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B46CA24F2764CB9700842CC0 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		B474005027621FFF00B3C0CB /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -740,6 +755,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B46CA2502764CB9800842CC0 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B46CA24F2764CB9700842CC0 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		B46CA2522764CB9800842CC0 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B46CA24F2764CB9700842CC0 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
 		B474005127621FFF00B3C0CB /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B474005027621FFF00B3C0CB /* XCRemoteSwiftPackageReference "SDWebImage" */;

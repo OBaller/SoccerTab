@@ -6,9 +6,14 @@
 //
 
 import UIKit
-
+import SDWebImage
+import SDWebImageSVGCoder
+//{
+//    clubsImage.sd_setImage(with: URL(string: model))
+//}
 class TeamInfoViewController: UIViewController {
     var teamInfoVM = TeamPlayerViewModel()
+    @IBOutlet weak var teamLogo: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var playerInfoCollectionView: UICollectionView!
     @IBOutlet weak var foundedLabel: UILabel!
@@ -20,10 +25,8 @@ class TeamInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        scrollView.bounds = view.bounds
-//        scrollView.isUserInteractionEnabled = true
-//        scrollView.isScrollEnabled = true
         teamInfoVM.fetchTeamPlayers()
+        teamLogo.sd_setImage(with: URL(string: teamInfoVM.teamLogo?.crestUrl ?? ""))
         playerInfoCollectionView.delegate = self
         playerInfoCollectionView.dataSource = self
         teamInfoVM.closure = {[weak self] in

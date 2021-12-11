@@ -487,6 +487,7 @@
                         <outlet property="phoneNumberLabel" destination="Xs7-br-8XV" id="QcQ-7K-D9d"/>
                         <outlet property="playerInfoCollectionView" destination="gGs-3N-uiO" id="wpS-WN-3K9"/>
                         <outlet property="scrollView" destination="GTS-SB-Jxo" id="a9j-kq-eoL"/>
+                        <outlet property="teamLogo" destination="LX2-Ea-oF1" id="iAW-Jl-D69"/>
                         <outlet property="websiteLabel" destination="Bna-sz-wDV" id="eul-Po-1yi"/>
                     </connections>
                 </viewController>
