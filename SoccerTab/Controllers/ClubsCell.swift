@@ -10,6 +10,7 @@ import SDWebImage
 import SDWebImageSVGCoder
 
 class ClubsCell: UICollectionViewCell {
+    
     @IBOutlet weak var clubsImage: UIImageView!
     
     func configure(with model: String) {

@@ -8,7 +8,11 @@
 import UIKit
 
 class ClubsViewController: UIViewController {
+    
     @IBOutlet weak var clubsCollectionView: UICollectionView!
+    
+    @IBOutlet weak var noInfoLbl: UILabel!
+    
      var clubVM = ClubsViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +24,19 @@ class ClubsViewController: UIViewController {
                 self?.clubsCollectionView.reloadData()
             }
         }
+        noInfoLbl.isHidden = true
     }
 }
 
 extension ClubsViewController:  UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        if clubVM.teams.count == 0 {
+            noInfoLbl.isHidden = false
+        } else {
+            noInfoLbl.isHidden = true
+        }
+        
         return clubVM.teams.count
     }
     

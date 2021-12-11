@@ -112,9 +112,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mOg-5D-u0W">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mOg-5D-u0W">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wwp-hX-1D2">
                                     <size key="itemSize" width="128" height="128"/>
@@ -148,12 +147,28 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No information available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpo-Hf-mlP">
+                                <rect key="frame" x="83.5" y="435" width="247.5" height="26.5"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k2w-WL-kEQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mOg-5D-u0W" firstAttribute="leading" secondItem="k2w-WL-kEQ" secondAttribute="leading" id="ApI-Fx-hPy"/>
+                            <constraint firstItem="gpo-Hf-mlP" firstAttribute="centerX" secondItem="W3w-Pj-soB" secondAttribute="centerX" id="NAu-Lo-zo4"/>
+                            <constraint firstItem="gpo-Hf-mlP" firstAttribute="centerY" secondItem="W3w-Pj-soB" secondAttribute="centerY" id="Z6u-eu-iov"/>
+                            <constraint firstItem="mOg-5D-u0W" firstAttribute="bottom" secondItem="k2w-WL-kEQ" secondAttribute="bottom" id="f1S-2A-GRq"/>
+                            <constraint firstItem="mOg-5D-u0W" firstAttribute="top" secondItem="W3w-Pj-soB" secondAttribute="top" id="teU-dB-35c"/>
+                            <constraint firstItem="mOg-5D-u0W" firstAttribute="trailing" secondItem="k2w-WL-kEQ" secondAttribute="trailing" id="wub-s2-nLk"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="clubsCollectionView" destination="mOg-5D-u0W" id="SxB-NI-dkj"/>
+                        <outlet property="noInfoLbl" destination="gpo-Hf-mlP" id="B2i-uh-Drg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwE-7p-1yV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
