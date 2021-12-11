@@ -20,9 +20,9 @@ class TeamInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.bounds = view.bounds
-        scrollView.isUserInteractionEnabled = true
-        scrollView.isScrollEnabled = true
+//        scrollView.bounds = view.bounds
+//        scrollView.isUserInteractionEnabled = true
+//        scrollView.isScrollEnabled = true
         teamInfoVM.fetchTeamPlayers()
         playerInfoCollectionView.delegate = self
         playerInfoCollectionView.dataSource = self
