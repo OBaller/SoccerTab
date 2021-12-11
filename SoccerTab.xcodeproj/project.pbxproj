@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B46CA2512764CB9800842CC0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B46CA2502764CB9800842CC0 /* Realm */; };
 		B46CA2532764CB9800842CC0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B46CA2522764CB9800842CC0 /* RealmSwift */; };
+		B46CA2552764D7A700842CC0 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CA2542764D7A700842CC0 /* NetworkMonitor.swift */; };
 		B4740011276136A800B3C0CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740010276136A800B3C0CB /* AppDelegate.swift */; };
 		B4740013276136A800B3C0CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740012276136A800B3C0CB /* SceneDelegate.swift */; };
 		B4740015276136A800B3C0CB /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4740014276136A800B3C0CB /* ClubsViewController.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B46CA2542764D7A700842CC0 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		B474000D276136A800B3C0CB /* SoccerTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4740010276136A800B3C0CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4740012276136A800B3C0CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				B49D823D2762970600BE3800 /* Service.swift */,
+				B46CA2542764D7A700842CC0 /* NetworkMonitor.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B49D8243276299CA00BE3800 /* ClubsViewModel.swift in Sources */,
+				B46CA2552764D7A700842CC0 /* NetworkMonitor.swift in Sources */,
 				B49D824927639D9600BE3800 /* TeamPlayers.swift in Sources */,
 				B49D823C276292B100BE3800 /* PlayerInfoCell.swift in Sources */,
 				B49D82472762A94A00BE3800 /* TeamRankModel.swift in Sources */,

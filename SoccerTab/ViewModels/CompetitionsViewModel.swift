@@ -7,7 +7,7 @@
 
 import Foundation
 class CompetitionsViewModel {
-    private let service = Service()
+     let service = Service()
     var competition = [Competition]()
     var closure: (() -> ())?
         let urlString = "https://api.football-data.org/v2/competitions"
